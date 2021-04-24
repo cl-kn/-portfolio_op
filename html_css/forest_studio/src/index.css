@@ -1,0 +1,471 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+html {
+    overflow-y: scroll;
+}
+
+body {
+    font-family: "Kosugi Maru", "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    width: 760px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+#wrapper {
+    overflow: hidden;
+}
+
+
+/* ヘッダー */
+
+header {
+    /* position: relative; */
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+header h1 {
+    font-family: 'Sriracha', cursive;
+    position: absolute;
+    left: 0;
+    top: 0px;
+}
+
+header h1 a {
+    text-decoration: none;
+    color: #235231;
+}
+
+header h1 a:visited {
+    color: #235231;
+}
+
+header p {
+    position: fixed;
+    /* right: 0px; */
+    top: 30px;
+    font-size: 13px;
+    color: #235231;
+}
+
+
+/* ナビゲーション */
+
+.menu {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    list-style: none;
+    font-size: 0;
+    white-space: nowrap;
+}
+
+.menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* border-radius: 5px; */
+    /* background: -webkit-linear-gradient(to bottom, #dde2de, #dde2de);
+    background: linear-gradient(to top, #dde2de, #dde2de); */
+    /* background-color: #dde2de; */
+}
+
+.menu li {
+    -webkit-box-flex: 10px auto;
+    -ms-flex: 10px auto;
+    flex: 10px auto;
+    width: 115px;
+    line-height: 28px;
+    display: inline-block;
+    text-align: center;
+    font-size: 12px;
+    border-right: solid 1px #cac7c7;
+}
+
+.menu a {
+    color: #235231;
+    text-decoration: none;
+}
+
+
+/* トップ画像 */
+
+.back_img {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    height: 230px;
+    background-image: url(../img/mountains1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+.wrap {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    margin: 0;
+}
+
+.h1_head {
+    /* border: solid 1px #b4b0b0; */
+    display: table;
+    width: 100%;
+    height: 60px;
+    min-height: 0%;
+    margin-bottom: 20px;
+    /* border: solid 1px #b4b0b0; */
+    /* box-shadow: 1px 1px #e6e1e1; */
+    /* border-radius: 5px; */
+    /* background-color: #3b2222; */
+    color: #235231;
+}
+
+.h1_head h1 {
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 20px;
+}
+
+.h1_head p {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 13px;
+}
+
+.right_img img {
+    border-radius: 20px;
+}
+
+.left_img img {
+    border-radius: 20px;
+}
+
+
+/* コンテナ-左*/
+
+@media only screen and (min-width:900px) {
+    .container_left {
+        float: left;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    /* コンテナ-記事-左 */
+    .container_left_1 {
+        float: left;
+        width: 245px;
+        margin-right: 12px;
+    }
+    /* コンテナ-記事-中央 */
+    .container_left_2 {
+        float: right;
+        width: 245px;
+    }
+    /* コンテナ-右 */
+    .container_right {
+        float: right;
+        width: 245px;
+    }
+}
+
+
+/* 記事部分 */
+
+article {
+    /* border: solid 1px #dde2de; */
+    /* box-shadow:  5px #235231; */
+    /* background: -webkit-linear-gradient(to top, #dde2de, #dde2de);
+    background: linear-gradient(to bottom, #dde2de, #dde2de); */
+    background-color: #dde2de;
+    height: 470px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+article h2 {
+    font-size: 18px;
+    font-weight: normal;
+    height: 40px;
+    padding: 10px 15px 17px;
+    background-color: #dde2de;
+}
+
+article p {
+    font-size: 13px;
+    padding: 13px 12px 12px;
+    background-color: #dde2de;
+}
+
+article figcaption {
+    font-size: 13px;
+    text-align: center;
+    color: #5C5C5C;
+    background-color: #dde2de;
+}
+
+article figure {
+    text-align: center;
+    background-color: #dde2de;
+}
+
+
+/* フッター */
+
+footer {
+    position: relative;
+    right: 0px;
+    width: 100%;
+    height: 30px;
+    clear: both;
+    margin-right: auto;
+    margin-left: auto;
+    border-top: solid 1px #235231;
+    border-top-style: ridge;
+}
+
+footer p {
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    color: #235231;
+    font-size: 10px;
+}
+
+
+/* お問い合わせ */
+
+* {
+    color: #235231;
+}
+
+.form_head {
+    display: table;
+    width: 100%;
+    height: 60px;
+    /* border: solid 1px #b4b0b0; */
+    /* box-shadow: 1px 1px #e6e1e1; */
+    border-radius: 5px;
+}
+
+.form_head h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 20px;
+    font-weight: normal;
+    padding-left: 15px;
+}
+
+.form_head p {
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 13px;
+    padding-left: 140px;
+}
+
+
+/* フォーム入力欄 */
+
+.user_form {
+    width: 100%;
+    text-align: center;
+}
+
+.user_form form {
+    display: inline-block;
+    text-align: left;
+    margin-top: 15px;
+}
+
+.user_form span {
+    color: #ff0000;
+}
+
+.user_form label {
+    font-size: 13px;
+    color: #235231;
+}
+
+.user_form input,
+textarea {
+    display: block;
+    margin-bottom: 10px;
+    border: solid 1px #b4b0b0;
+}
+
+input {
+    width: 410px;
+}
+
+textarea {
+    width: 410px;
+    height: 100px;
+}
+
+input[type="submit"] {
+    background-color: #2e6d41;
+    margin-top: 15px;
+    width: 180px;
+    color: #ecebeb;
+}
+
+
+/* スマホ対応 */
+
+@media only screen and (max-width:599px) {
+    body {
+        width: 98%;
+    }
+    body * p {
+        font-size: 4vw;
+    }
+    header p {
+        top: 10px;
+        width: 160px;
+        font-size: 12px;
+    }
+    .back_img {
+        width: 100%;
+        height: 150px;
+    }
+    .menu {
+        margin-top: 20px;
+        font-size: 0;
+    }
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .h1_head {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-direction: column;
+        /* flex-direction: column-reverse; */
+        /* display: inline-block; */
+        width: 100%;
+        height: 100%;
+        margin-bottom: 15px;
+    }
+    .h1_head h1 {
+        /* display: inline-block; */
+        text-align: left;
+        font-weight: bold;
+        font-size: 6vw;
+        padding: 10px 10px 0px;
+    }
+    .h1_head p {
+        display: inline-block;
+        text-align: left;
+        padding-left: 10px;
+        font-size: 4vw;
+    }
+    article {
+        margin-top: 10px;
+        padding: 10px;
+        height: 100%;
+    }
+    article h2 {
+        font-size: 5vw;
+        padding: 10px 0px 5px 5px;
+    }
+    article p {
+        padding: 10px;
+    }
+    footer {
+        margin-top: 20px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+}
+
+
+/* タブレット対応 */
+
+@media only screen and (min-width: 600px) and (max-width:899px) {
+    body {
+        width: 95%;
+    }
+    body * p {
+        font-size: 2vw;
+    }
+    .wrap * p {
+        font-size: 17px;
+    }
+    .menu {
+        margin-top: 20px;
+        font-size: 0;
+    }
+    .menu ul {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+        height: 100%;
+    }
+    .h1_head {
+        width: 100%;
+    }
+    .h1_head p {
+        width: 320px;
+        padding-right: 30px;
+        text-align: left;
+    }
+    .back_img {
+        width: 100%;
+        height: 150px;
+    }
+    .right_img {
+        float: right;
+        padding-left: 10px;
+    }
+    .left_img {
+        float: left;
+        padding-right: 10px;
+    }
+    article {
+        height: 230px;
+        margin-top: 10px;
+        padding: 10px;
+    }
+    article h2 {
+        padding: 0px;
+        padding-left: 10px;
+    }
+    article p {
+        padding: 0px;
+    }
+    footer p {
+        font-size: 10px;
+    }
+    .form_wrap {
+        width: 100%;
+    }
+}
+
+/* 追加 */
+.current {
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-decoration-color: #235231;
+}

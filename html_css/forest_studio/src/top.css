@@ -1,0 +1,52 @@
+.back_img {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 15px;
+    height: 507px;
+    background-image: url('../img/mountains1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+}
+
+#slideshow {
+    position: relative;
+    width: 640px;
+    height: 507px;
+}
+
+#slideshow img {
+    text-align: center;
+    position: absolute;
+    border-radius: 20px;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0.0;
+}
+
+#slideshow img.active {
+    z-index: 10;
+    opacity: 1.0;
+}
+
+#slideshow img.last-active {
+    z-index: 9;
+}
+
+
+@media only screen and(max-width:599px) {
+    #slideshow {
+        width: 100%;
+        height: 150px;
+    }
+}
+
+@media only screen and(min-width: 600px) and(max-width:899px) {
+    #slideshow {
+        width: 100%;
+        height: 150px;
+    }
+}
