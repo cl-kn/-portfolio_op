@@ -1,0 +1,79 @@
+body {
+    /* border: dotted 2px #000000; */
+    padding: 20px;
+    background-color: rgb(247, 247, 247);
+    color: #000000;
+    word-break: break-all;
+    text-align: center;
+}
+
+pre {
+    white-space: pre-wrap;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+td {
+    width: auto;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    /* background-color: rgb(223, 223, 223); */
+    /* 背景色指定 */
+}
+
+.inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.radio {
+    width: 25px;
+}
+
+.font_right {
+    text-align: right;
+}
+
+.font_center {
+    text-align: center;
+}
+
+.picture {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    border-bottom: none;
+    /*線を消す*/
+}

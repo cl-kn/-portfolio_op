@@ -1,0 +1,11 @@
+body {
+    /* border: dotted 2px #000000; */
+    padding: 20px;
+    background-color: rgb(245, 239, 239);
+    color: #000000;
+    word-break: break-all;
+}
+
+pre {
+    white-space: pre-wrap;
+}

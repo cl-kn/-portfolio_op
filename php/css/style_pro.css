@@ -1,0 +1,229 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Sriracha&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+
+html {
+    /* overflow-y: scroll; */
+}
+
+body {
+    font-family: "Kosugi Maru", "メイリオ", "Hiragino Kaku Gothic Pro", sans-serif;
+
+    /* border: dotted 2px #000000; */
+    padding: 20px;
+    background-color: rgb(226, 226, 226);
+    color: #000000;
+    word-break: break-all;
+    text-align: center;
+}
+
+/* コーギーサイトデザイン設定 ～360行*/
+
+.html {
+    font-size: 62.5%;
+    /* 16px×0.625＝10px の意味 */
+    height: 100%;
+}
+
+.container {
+    /* font-size: 2.0rem; */
+    /* ==================== 
+       rem単位 について
+       ・root em (最上位階層の em )の意味
+       ・最上位のHTML要素である「HTML」の文字サイズを基準とした、相対的文字サイズ指定の単位
+       ・※親要素の影響を受けない※
+       ・レスポンシブ対応に適している
+     ==================== */
+}
+
+.header {
+    /* background-color: #f8a100; */
+}
+
+.main {
+    /* background-color: #fad288; */
+}
+
+/* .main h1 {
+    font-size: 1.5rem;
+} */
+
+.footer {
+    /* background-color: #f8a100; */
+}
+
+.footer p {
+    text-align: right;
+}
+
+header ul {
+    list-style: none;
+    padding: 20px;
+    text-align: center;
+    /*文字を右揃え */
+}
+
+a {
+    text-decoration: none;
+}
+
+.current {
+    background-color: #f8a100;
+}
+
+/* ==================== 
+   グリッドコンテナ
+ ==================== */
+.container {
+    display: grid;
+    min-height: 100%;
+
+    /*1列目から順番に、180px , 1fr, 160px の幅
+    中央の幅は、全体 - 左右 の可変幅*/
+    grid-template-columns: 0px 1fr 0px;
+    /* 1行目から順番に60px 1fr 90pxの高さ */
+    grid-template-rows: 100px 1fr 0px;
+}
+
+/* ==================== 
+   グリッドアイテム
+ ==================== */
+.header {
+    /*列の1本目～4本目のグリッドラインまで*/
+    grid-column: 1 / 4;
+    /* 下記の省略記法*/
+
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+
+    /*行の1本目～2本目のグリッドラインまで*/
+    grid-row: 1;
+    /*autoは省略可*/
+
+    /* grid-row-start: 1; */
+    /* grid-row-end: auto; */
+    /* auto は指定したglの次のglまでの範囲*/
+
+    position: sticky;
+    top: 0;
+
+}
+
+header li {
+    display: inline-block;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    /*背景の角を丸く*/
+}
+
+.header a {
+    color: #000000;
+    text-decoration: none;
+}
+
+header {
+    /* z-index: 3; */
+    /* transition: all .4s ease; */
+}
+
+.main {
+    grid-column: 2;
+    grid-row: 2;
+
+    padding-top: 30px;
+    /* min-height: 100%; */
+    /* min-height: calc(100vh - 70px); */
+}
+
+.main a {
+    color: 000000;
+    background-color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+}
+
+.footer {
+    /* grid-column: 1 / 4; */
+    /* grid-row-start: 3; */
+    /* grid-row-end: 4; */
+    /* height: 50px; */
+}
+
+.top_img {
+    width: 100%;
+}
+
+/* コーギーサイトデザイン設定 ここまで */
+
+
+pre {
+    white-space: pre-wrap;
+}
+
+table {
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 5px;
+}
+
+td {
+    width: auto;
+    padding: 10px;
+}
+
+tr:nth-child(odd) {
+    /* background-color: rgb(223, 223, 223); */
+    /* 背景色指定 */
+}
+
+.inner {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.radio {
+    width: 25px;
+}
+
+.font_right {
+    text-align: right;
+}
+
+.font_center {
+    text-align: center;
+}
+
+.picture {
+    text-align: center;
+}
+
+.tr {
+    text-align: right;
+}
+
+.tc {
+    text-align: center;
+}
+
+.btn-square {
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    /*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+
+.btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    /*下に動く*/
+    border-bottom: none;
+    /*線を消す*/
+}
